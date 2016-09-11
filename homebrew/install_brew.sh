@@ -37,6 +37,7 @@ apps=(
     homebrew/dupes/grep
     homebrew/dupes/openssh
     mtr
+    mackup
     autojump
     imagemagick --with-webp
     python

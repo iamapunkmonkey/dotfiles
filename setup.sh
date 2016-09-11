@@ -2,7 +2,8 @@
 
 #symlinking
 ln -fs $(pwd)/git/gitconfig ~/.gitconfig
-ln -fs $(pwd)/git/gitignore ~/.gitignore_global 
+ln -fs $(pwd)/git/gitignore ~/.gitignore_global
+ln -fs $(pwd)/mackup/mackup.cgf ~/.mackup.cfg
 
 cp $(pwd)/fonts/SourceCodePro+Powerline+Awesome+Regular.ttf /Library/Fonts/
 
