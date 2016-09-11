@@ -9,7 +9,7 @@
 [user]
 	name = Zach Breman
 	email = zbreman@gmail.com
-	signingkey = 7A9EE3CF
+	#signingkey = 7A9EE3CF
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -31,4 +31,4 @@
 	diff = diff-so-fancy | less --tabs=4 -RFX
 	show = diff-so-fancy | less --tabs=4 -RFX
 [commit]
-	gpgsign = true
+	gpgsign = false
