@@ -16,10 +16,9 @@ brew update
 brew upgrade --all
 
 apps=(
+    ack
     rvm
     nvm
-    mongodb
-    bash-completion2
     coreutils
     moreutils
     findutils
