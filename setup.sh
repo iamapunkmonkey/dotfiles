@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #symlinking
-ln -fs ~/.gitconfig $(pwd)/git/gitconfig
-ln -fs ~/.gitignore_global $(pwd)/git/gitignore
+ln -fs $(pwd)/git/gitconfig ~/.gitconfig
+ln -fs $(pwd)/git/gitignore ~/.gitignore_global 
 
 cp $(pwd)/fonts/SourceCodePro+Powerline+Awesome+Regular.ttf /Library/Fonts/
 
