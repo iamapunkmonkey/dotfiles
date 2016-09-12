@@ -139,6 +139,8 @@ bindkey '^T' autosuggest-toggle
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
+eval "$(thefuck --alias)"
+
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

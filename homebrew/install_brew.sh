@@ -47,6 +47,7 @@ apps=(
     ffmpeg --with-libvpx
     wget
     zsh
+    thefuck
 )
 
 brew install "${apps[@]}"
