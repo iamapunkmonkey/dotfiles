@@ -11,6 +11,9 @@ apps=(
   malwarebytes-anti-malware
   glimmerblocker
   macdown
+  iterm2
+  atom
+  slack
   transmit
   font-monofur
 )
