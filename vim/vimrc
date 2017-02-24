@@ -1,7 +1,7 @@
 set nocompatible
 
-call pathogen#helptags()
-call pathogen#infect()
+execute pathogen#helptags()
+execute pathogen#infect()
 
 let mapleader=","
 
@@ -37,7 +37,10 @@ set noerrorbells
 set nobackup
 set noswapfile
 
+filetype plugin on
 filetype plugin indent on
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 if has('autocmd')
 	autocmd filetype python set expandtab
