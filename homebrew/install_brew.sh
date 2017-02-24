@@ -1,18 +1,18 @@
 #!/bin/sh
 sudo -v
 
-if test ! $(which brew)
-then
-  echo "Installing Brew"
-  if test "$(uname)" = "Darwin"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-    PATH="$HOME/.linuxbrew/bin:$PAT
-  fi
-fi
+#if test ! $(which brew)
+#then
+#  echo "Installing Brew"
+#  if test "$(uname)" = "Darwin"
+#  then
+#    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
+#  then
+#    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+#    PATH="$HOME/.linuxbrew/bin:$PAT
+#  fi
+#fi
 
 brew tap homebrew/versions
 brew tap homebrew/dupes
@@ -24,8 +24,6 @@ brew upgrade --all
 
 apps=(
     ack
-    rvm
-    nvm
     coreutils
     moreutils
     findutils
