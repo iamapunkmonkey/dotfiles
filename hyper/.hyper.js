@@ -60,7 +60,8 @@ module.exports = {
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
     },
-
+	pokemon: 'Jigglypuff',
+  pokemonSyntax: 'dark',
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
     // make sure to use a full path if the binary name doesn't work
@@ -97,14 +98,9 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-  	  'hyperpower',
-//	  "hyper-cat",
-  	  'hyper-dark-dracula',
-  	  'hyperline',
-  	  'hyperterm-paste',
-  	  'hyperterm-tabs'
-  ],
+  plugins: [//  	  'hyperpower',
+  //	  "hyper-cat",
+  'hyper-dark-dracula', 'hyperline', 'hyperterm-paste', 'hyperterm-tabs', "hyper-pokemon"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

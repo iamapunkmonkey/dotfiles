@@ -33,7 +33,7 @@ alias ga='git add'
 alias grep='grep --color=auto'
 alias clone='git clone'
 alias cmt='git commit'
-alias c='clear'
+alias c='clear; pokemon random'
 
 alias lll='ll -tra'
 
@@ -165,7 +165,9 @@ eval "$(thefuck --alias)"
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
-export NVM_DIR="/Users/zbreman/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+pokemon random; clear
