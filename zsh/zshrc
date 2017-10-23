@@ -12,6 +12,9 @@ TERM=xterm-256color
 
 plugins=(git rails brew bundler docker emoji rvm sublime node npm osx bower z)
 
+. ~/.iterm2-tab-color/functions.sh
+it2-tab-color 263238
+
 # User configuration
 
 export MYSQL_PATH=/usr/local/Cellar/mysql/5.6.27
@@ -169,3 +172,7 @@ export NVM_DIR="/Users/zbreman/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+source $HOME/.cargo/env
+source ~/tensorflow/bin/activate
+
