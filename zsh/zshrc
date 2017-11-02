@@ -36,7 +36,7 @@ alias ga='git add'
 alias grep='grep --color=auto'
 alias clone='git clone'
 alias cmt='git commit'
-alias c='clear; pokemon random'
+alias c='clear'
 
 alias lll='ll -tra'
 
@@ -173,5 +173,5 @@ source $(brew --prefix nvm)/nvm.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-source $HOME/.cargo/env
-source ~/tensorflow/bin/activate
+
+
